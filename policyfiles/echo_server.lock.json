@@ -1,0 +1,121 @@
+{
+  "revision_id": "0019ecaa865c751412ec0bb5da85a4260c631f0dcbf3e91ff8e1c2b485532ea2",
+  "name": "echo_server",
+  "run_list": [
+    "recipe[notepad_plus::default]",
+    "recipe[atom::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "atom": {
+      "version": "0.1.0",
+      "identifier": "2e7d34f9ce6bb38fc6372a97d74296674d5bb02c",
+      "dotted_decimal_identifier": "13085515411516339.40468861909718850.165370423652396",
+      "source": "../cookbooks/atom",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "d38accfe9ac0c7ce8fc753584bdc93300d9cfd06",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/atom"
+      }
+    },
+    "notepad_plus": {
+      "version": "0.1.0",
+      "identifier": "5333e79cfb88abaa85b5a9890fb5f54d446f1f47",
+      "dotted_decimal_identifier": "23419492931176619.47997761320718261.269712209420103",
+      "source": "../cookbooks/notepad_plus",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "d38accfe9ac0c7ce8fc753584bdc93300d9cfd06",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/notepad_plus"
+      }
+    },
+    "notepadpp": {
+      "version": "2.0.0",
+      "identifier": "f9b5e9492aa72e446143038ed845c5658eb288a2",
+      "dotted_decimal_identifier": "70287282760492846.19247238866720837.217039976433826",
+      "cache_key": "notepadpp-2.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/notepadpp/versions/2.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/notepadpp/versions/2.0.0/download",
+        "version": "2.0.0"
+      }
+    },
+    "windows": {
+      "version": "7.0.0",
+      "identifier": "629a3d501f59162729c1f7deab861b5c27ff9f73",
+      "dotted_decimal_identifier": "27754135845558550.11023437155707782.30082622005107",
+      "cache_key": "windows-7.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/7.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows/versions/7.0.0/download",
+        "version": "7.0.0"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "atom",
+        ">= 0.0.0"
+      ],
+      [
+        "notepad_plus",
+        ">= 0.0.0"
+      ],
+      [
+        "notepadpp",
+        "= 2.0.0"
+      ],
+      [
+        "windows",
+        "= 7.0.0"
+      ]
+    ],
+    "dependencies": {
+      "atom (0.1.0)": [
+
+      ],
+      "notepad_plus (0.1.0)": [
+        [
+          "notepadpp",
+          "~> 2.0.0"
+        ]
+      ],
+      "notepadpp (2.0.0)": [
+        [
+          "windows",
+          ">= 0.0.0"
+        ]
+      ],
+      "windows (7.0.0)": [
+
+      ]
+    }
+  }
+}
