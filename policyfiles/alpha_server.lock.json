@@ -1,0 +1,79 @@
+{
+  "revision_id": "e8d0c0d26a6901d94b2151e5c4c680943a514b23f54d6ec3e8674044daa550c0",
+  "name": "alpha_server",
+  "run_list": [
+    "recipe[apache_tomcat::default]",
+    "recipe[notepad_plus::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apache_tomcat": {
+      "version": "0.1.0",
+      "identifier": "2d33cfea1c87f216021ee5ed016b213ce4e047d8",
+      "dotted_decimal_identifier": "12723342030964722.6194781217423723.36545421658072",
+      "source": "../cookbooks/apache_tomcat",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "eb3850bc3c2750a5cf90c503bd1e30c212bf9f24",
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/apache_tomcat"
+      }
+    },
+    "notepad_plus": {
+      "version": "0.1.0",
+      "identifier": "014c12a7740cf390c646af18825fec4d2022807e",
+      "dotted_decimal_identifier": "365117979233523.40750403533963871.259815995768958",
+      "source": "../cookbooks/notepad_plus",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "eb3850bc3c2750a5cf90c503bd1e30c212bf9f24",
+        "working_tree_clean": true,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "../cookbooks/notepad_plus"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apache_tomcat",
+        ">= 0.0.0"
+      ],
+      [
+        "notepad_plus",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "apache_tomcat (0.1.0)": [
+
+      ],
+      "notepad_plus (0.1.0)": [
+
+      ]
+    }
+  }
+}
