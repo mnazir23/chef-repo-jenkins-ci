@@ -1,5 +1,5 @@
 {
-  "revision_id": "0019ecaa865c751412ec0bb5da85a4260c631f0dcbf3e91ff8e1c2b485532ea2",
+  "revision_id": "140285de73f5af7d5834f5a4571705d0b84fe28de148792adc280a935305cb28",
   "name": "echo_server",
   "run_list": [
     "recipe[notepad_plus::default]",
@@ -18,11 +18,11 @@
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "d38accfe9ac0c7ce8fc753584bdc93300d9cfd06",
+        "revision": "4b6b721de912ced3c54616b20314d5444cccf517",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
@@ -31,18 +31,18 @@
     },
     "notepad_plus": {
       "version": "0.1.0",
-      "identifier": "5333e79cfb88abaa85b5a9890fb5f54d446f1f47",
-      "dotted_decimal_identifier": "23419492931176619.47997761320718261.269712209420103",
+      "identifier": "495825c0d0dca5d6b13bbe2fba110dd228e3e05d",
+      "dotted_decimal_identifier": "20644592471825573.60430515168066065.15196280315997",
       "source": "../cookbooks/notepad_plus",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "d38accfe9ac0c7ce8fc753584bdc93300d9cfd06",
+        "revision": "4b6b721de912ced3c54616b20314d5444cccf517",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/master"
         ]
       },
       "source_options": {
